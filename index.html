@@ -515,8 +515,7 @@
   const correctSound = new Audio('./music/correct.mp3');
   const incorrectSound = new Audio('./music/incorrect.mp3');
   const victorySound = new Audio('./music/victory.mp3');
-
-
+    
   // Reset score function
   function resetScore() {
     score = 0;
@@ -589,11 +588,11 @@
       const img = document.createElement("img");
       img.src = image;  // Set the image source dynamically
       img.alt = `Animal Image ${index}`;  // Add alt text for accessibility
-      console.log(img.src);
       img.style.width = "100%";  // Ensure the image fills the card
       img.style.height = "100%";  // Ensure the image fills the card
       img.style.objectFit = "contain"; // Cover the space within the card, maintaining aspect ratio
       img.style.opacity = 0; // Initially hide the image
+      img.loading="lazy";
 
       back.appendChild(img);  // Append the image to the back of the card
       card.appendChild(front);
