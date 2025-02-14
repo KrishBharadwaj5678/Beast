@@ -398,6 +398,7 @@ button#close-memory-box{
   .slider {
     bottom: 10px;
     margin: 0px;
+    margin: 0px 20px 0px 20px;
   }
 
   .slides {
